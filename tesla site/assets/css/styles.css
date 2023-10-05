@@ -1,0 +1,247 @@
+body {
+  color: rgb(255,255,255);
+  background: rgb(0,0,0);
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/img/hero-mobile.jpg") center / cover no-repeat;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background: url("../../assets/img/hero.jpg") center / cover no-repeat;
+  }
+}
+
+.navbar-brand {
+  background: url("../../assets/img/logo.svg") center / 80% no-repeat;
+  width: 150px;
+  height: 17px;
+}
+
+#navcol-1 {
+  font-size: 13px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(34,34,34);
+}
+
+#title {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#subtitle {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#side-menu, .side-menu-overlay {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  display: none;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+#side-menu {
+  width: 300px;
+  right: -300px;
+  overflow-y: auto;
+  z-index: 1035;
+  background: #fff;
+  padding: 20px 30px;
+  color: #333;
+  transition: .4s;
+}
+
+body.side-menu-visible #side-menu {
+  transform: translateX(-300px);
+}
+
+#side-menu .contents {
+  margin-top: 15px;
+}
+
+#side-menu .nav-link {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+#side-menu .nav-link:hover {
+  opacity: .8;
+}
+
+#side-menu .close {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.side-menu-overlay {
+  left: 0;
+  min-width: 100%;
+  background: rgba(0,0,0,.4);
+  z-index: 100;
+}
+
+#side-menu.side-menu-left {
+  right: autIo;
+  left: -300px;
+}
+
+body.side-menu-visible #side-menu.side-menu-left {
+  transform: translateX(300px);
+}
+
+#hero-bottom {
+  color: #fff;
+}
+
+.p-top {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.p-bot {
+  font-size: 13px;
+}
+
+.reserved-button {
+  width: 100%;
+  background: rgba(255,255,255,0);
+  border: 3px solid white;
+  border-radius: 30px;
+  color: white;
+}
+
+.reserved-button:hover {
+  color: black;
+  background: white;
+}
+
+.arrow-button {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background: rgba(255,255,255,0);
+  border-style: none;
+  font-size: 32px;
+}
+
+#hero-bottom .container {
+  max-width: 700px;
+  text-align: center;
+}
+
+.with-borders {
+  border: 1px solid rgba(255,255,255,0.36);
+  border-bottom: none;
+  border-top: none;
+}
+
+#video-and-stats {
+  text-align: center;
+}
+
+#video-and-stats iframe {
+  width: 90%;
+  height: 400px;
+}
+
+@media (min-width: 992px) {
+  #video-and-stats iframe {
+    width: 900px;
+    height: 500px;
+  }
+}
+
+#stats {
+  background: rgba(255, 255, 255, 0);
+  width: 600px;
+  margin: 0 auto;
+}
+
+#stats th {
+  text-align: left;
+}
+
+.images {
+  height: 100vh;
+  width: 100%;
+}
+
+#first {
+  background: url("../../assets/img/back.jpg") center / cover no-repeat;
+}
+
+#aero {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/img/back.jpg") center / cover no-repeat;
+}
+
+#interior {
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 768px) {
+  #interior {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+#interior .figure {
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  #interior .figure {
+    max-width: 70%;
+  }
+}
+
+#interior .figure-caption {
+  color: rgb(255,255,255);
+  font-size: 10px;
+}
+
+#topview {
+  width: 100%;
+  height: 120vh;
+  background: url("../../assets/img/top.jpg") center / cover no-repeat;
+}
+
+#topview .container {
+  margin-bottom: 90px;
+}
+
+#specs {
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
